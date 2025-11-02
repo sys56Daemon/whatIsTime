@@ -11,7 +11,7 @@ function update_clock(){
     timeArea.innerText = time_now;
 }
 
-setInterval(update_clock , 1);
+setInterval(update_clock , 1); 
 
 // typewriter animation : imma add this later
 function typewrite_Animation(){
