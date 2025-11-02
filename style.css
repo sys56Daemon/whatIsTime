@@ -10,8 +10,13 @@ div{
 }
 
 .theLineFromGenius {
-    font-size: large;
+    font-size: 69px;
 
+}
+
+.theLineFromGenius::selection{
+    color:red;
+    background-color:bisque;
 }
 
 #Mileva{
@@ -26,13 +31,25 @@ div{
     color: red;
 }
 
-.space_to_display_time {
+#Einstein #whatIsTime::selection {
+    background-color: black;
+    color: bisque;
+}
+
+#space_to_display_time {
     position: fixed;
     top: 50%;
-    left: 31%;  
+    left: 40%;  
     text-align: center;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-size: 100px;
+
+    color: bisque;
+}
+
+#space_to_display_time::selection{
+    background-color: bisque;
+    color: black;
 }
