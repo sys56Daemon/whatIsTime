@@ -25,3 +25,14 @@ div{
 #Einstein #whatIsTime {
     color: red;
 }
+
+.space_to_display_time {
+    position: fixed;
+    top: 50%;
+    left: 31%;  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 100px;
+}
