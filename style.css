@@ -26,6 +26,23 @@ body{
     color: bisque;
 }
 
+.countdown {
+        position: fixed;
+    /* display: flex; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6.25rem;
+    color: bisque;
+    text-align: center;
+}
+
+.countdown::selection{
+    background-color: bisque;
+    color: black;
+}
+
+
 #space_to_display_time {
     position: fixed;
     /* display: flex; */

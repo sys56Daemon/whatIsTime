@@ -17,6 +17,19 @@ function typewrite_Animation(){
     
 }
 
+function calc_time_diff_and_display( t_zero){
+    
+ 
+    // to update the time 
+    setInterval( () => {
+    const now_in_unix = Date.now();
+    var time_left = t_zero - now_in_unix;
+
+    console.log("\rTime Left: " + time_left);
+
+
+    } , 1000);
+}
 
 function openCountdownDialogue(){
 
@@ -40,6 +53,8 @@ function getCtdwnDate(){
         
         console.log("the date in seconds: " + unix_time_in_ms);
         console.log("the date in Object : " + date_in_obj);
+
+        calc_time_diff_and_display(unix_time_in_ms);
         })
 }
 
