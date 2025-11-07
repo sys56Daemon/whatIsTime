@@ -41,6 +41,20 @@ body{
     color: black;
 }
 
+
+.themedBtn{
+    font-size: 56px;
+    border: 2px solid bisque;
+    border-radius:160px;
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(45, 45, 45);
+    color: bisque;
+    
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .theLineFromGenius {
