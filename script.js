@@ -24,11 +24,15 @@ function calc_time_diff_and_display( t_zero){
     setInterval( () => {
     const now_in_unix = Date.now();
     var time_left = t_zero - now_in_unix;
-
     console.log("\rTime Left: " + time_left);
-
-
+    update_ctdwn( time_left);
+    
     } , 1000);
+}
+
+function update_ctdwn( t ){
+    // 
+    // 
 }
 
 function openCountdownDialogue(){
@@ -54,6 +58,9 @@ function getCtdwnDate(){
         console.log("the date in seconds: " + unix_time_in_ms);
         console.log("the date in Object : " + date_in_obj);
 
+        // create a new element of countdown class
+        document.getElementById("display_countdown_here")
+        
         calc_time_diff_and_display(unix_time_in_ms);
         })
 }
